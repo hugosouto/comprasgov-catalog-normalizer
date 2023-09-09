@@ -1,6 +1,12 @@
 sql_query = """
-SELECT *
-FROM catalogo.item_material
+SELECT 
+     it_co_orgao_superior
+    ,it_no_orgao_superior
+    ,it_co_orgao_vinculado
+    ,it_no_orgao_vinculado
+    ,it_co_unidade_gestora
+    ,it_no_unidade_gestora
+FROM estrutura.siasg_uasgs_orgaos
 WHERE 1=1
-ORDER BY codigo_grupo, codigo_classe, codigo_pdm, codigo_item
+ORDER BY it_co_orgao_superior, it_co_orgao_vinculado, it_co_unidade_gestora;
 """
