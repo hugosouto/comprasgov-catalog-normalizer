@@ -1,4 +1,4 @@
-# comprasgov-catalog-normalizer
+# ComprasGov Materials Catalog Normalizer
 
 This script reads data from a postgres database, encodes categorical columns to numeric values, and writes the resulting dataframe to a postgres database.
 
